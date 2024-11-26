@@ -1,0 +1,128 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  border: 1px solid #7a7a7a;
+}
+
+.header .header-login{
+  padding: 10px 10px 10px 10px;
+  margin: 15px 10px 10px 10px;
+}
+.header span{
+  margin-left: 10px;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  background-color: #dc2f02;
+  border-radius: 10px;
+  font-size: 12px;
+  height: 100%;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.header span:hover{
+  background-color: #e2451e;
+}
+.header-logo{
+  display: flex;
+  padding-left: 20px;
+}
+
+.header-logo h1{
+  margin-top: 20px;
+  padding-left: 30px;
+  font-size: 30px;
+  color: #dc2f02;
+}
+
+.header-logo .menu{
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.sign-up{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+}
+
+.navigator-content{
+  max-width: 270px;
+  height: 100vh;
+  flex-direction: column;
+  border: 1px solid #7a7a7a;
+  overflow: hidden;
+}
+/* Click menu */
+
+.navigator-content.collapsed{
+  max-width: calc(270px*0.25);
+  padding-right: 2px;
+  padding-left: 2px;
+  height: 100vh;
+  border: 1px solid #7a7a7a;
+}
+
+.navigator-content-collapsed.vuelo img, .navigator-content-collapsed.alojamientos img{
+  padding: 10px;
+}
+
+
+.navigator-content-options{
+  padding: 8px 8px 8px 8px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.navigator-content-options ul{
+  margin: 0px 0px 5px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+}
+
+.navigator-content-options li{
+  color: black;
+  list-style-type: none;
+  display: flex;
+  padding: 6px 0px 6px 6px;
+  margin: 0px 0px 2px 0px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.navigator-content-options img{
+  /* top right bottom left */
+  padding: 7px 7px 5px 7px;
+}
+
+.navigator-content-options p{
+  margin: 5px 0px 5px 0px;
+  padding-right: 10px;
+  padding-left: 30px;
+}
+
+.navigator-content-expanded.vuelo, .navigator-content-expanded.alojamientos{
+  padding: 10px;
+  transition: background-color;
+}
+
+.bgColor{
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.vuelo:hover, .alojamientos:hover{
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+

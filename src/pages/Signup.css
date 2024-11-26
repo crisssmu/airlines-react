@@ -1,0 +1,86 @@
+.signup{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-sizing: content-box;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+}
+
+.signup h1{
+    color: rgb(0, 0, 0);
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+.signup .form{
+    border-radius: 5px;
+    margin: 20px 20px 20px 20px;
+    box-sizing: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.signup .form .email, .signup .form .password{
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.signup span{
+    font-size: 18px;
+    font-weight: bold;
+    color: #dc2f02;
+}
+
+.form .email input{
+    text-indent: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+.form .password input{
+    text-indent: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border:1px solid rgb(161, 161, 161);
+    
+}
+
+.form button{
+    height: 40px;
+    width: 100px;
+    margin: 15px 100px 0px 100px;
+    background-color: #dc2f02;
+    border-radius: 5px;
+    color: white;
+}
+.form p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 7px;
+    color: rgb(161, 161, 161);
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: #e2451e;
+    cursor: pointer;
+}
